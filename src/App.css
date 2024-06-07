@@ -1,0 +1,157 @@
+/*Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*CSS Variables*/
+:root {
+  
+  --primary-color: hsl(165, 60%, 40%);
+  --title-color: hsl(0, 0%, 100%);
+  --text-color:hsl(0,0%,92%);
+  --bg-color: hsl(216, 18%, 16%);
+  --bg-color-alt: hsl(213, 10%, 21%);
+  --container-color: hsl(217, 18%, 14%);
+  --border-color: hsl(210, 2%, 65%);
+  --first-gradient: linear-gradient(
+    0deg, var(--bg-color-alt) 0%, var(--bg-color) 100%
+  );
+  --second-gradient: linear-gradient(
+    180deg, var(--bg-color-alt) 0%, var(--bg-color) 100%
+  );
+  --third-gradient: linear-gradient(
+    180deg, var(--bg-color) 0%, var(--bg-color) 100%
+  );
+
+  /*Typography*/
+  --body-font: 'Jost', sans-serif;
+  --second-font: 'Caveat', sans-serif;
+
+  --biggest-font-size: 90px;
+  --h1-font-size: 44px;
+  --h2-font-size: 30px;
+  --h3-font-size: 28px;
+  --h4-font-size: 24px;
+  --h5-font-size: 22px;
+  --largest-font-size: 21px;
+  --larger-font-size: 20px;
+  --large-font-size: 18px;
+  --normal-font-size: 16px;
+  --small-font-size: 15px;
+  --smaller-font-size: 14px;
+  --tiny-font-size: 13px;
+
+  /*Shadow*/
+  --shadow: 5px 5px rgb(255 255 255 / 10%);
+
+  /*transition*/
+  --transition: cubic-bezier(0.3,0,0.3,1);
+}
+
+/*RESET*/
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+button,
+input,
+body {
+font-family: var(--body-font);
+font-size: var(--normal-font-size);
+}
+
+body{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+h1,
+h2,
+h3{
+  color: var(--title-color);
+  font-weight: 700;
+}
+
+ul{
+  list-style: none;
+}
+
+p{
+  line-height: 1.7;
+}
+
+a{
+  text-decoration: none;
+}
+
+input,
+textarea,
+button{
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+button{
+  cursor: pointer;
+}
+
+img{
+  max-width: 100%;
+}
+
+/*REUSABLE CSS CLASSES*/
+.container {
+    max-width: 1300px;
+    padding-inline: 12px;
+    margin-inline: auto;
+}
+
+.text-cs{
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.btn,
+.hero__link{
+    color: var(--title-color);
+    font-size: var(--tiny-font-size);
+    font-weight: 700;
+    height: 56px;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.btn{
+    border: 2px solid var(--border-color);
+    padding-inline: 40px;
+    border-radius: 56px;
+    box-shadow: var(--shadow);
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: var(--primary-color);
+    border-radius: inherit;
+    transform: scale(0.3);
+    filter: blur(10px);
+    opacity: 0;
+    transition: all 0.7s var(--transition);
+    z-index: -1;
+}
+
+.btn:hover::before {
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+}
+
+.shape{
+  position: absolute;
+  filter: invert(1);
+  opacity: 0.6;
+}
