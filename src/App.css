@@ -106,6 +106,12 @@ img{
     max-width: 1300px;
     padding-inline: 12px;
     margin-inline: auto;
+    margin-top: 50px;
+}
+
+.grid{
+  display: grid;
+  gap: 24px;
 }
 
 .text-cs{
