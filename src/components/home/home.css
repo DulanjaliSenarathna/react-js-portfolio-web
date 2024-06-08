@@ -1,5 +1,10 @@
 .home{
     background-image: var(--first-gradient);
+   
+    padding-bottom: 180px;
+}
+
+.home__wrapper{
     min-height: 100vh;
     display: grid;
     align-items: center;

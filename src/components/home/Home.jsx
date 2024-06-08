@@ -8,6 +8,7 @@ import './home.css'
 const Home = () => {
   return (
     <section className='home' id='home'>
+        <div className="home__wrapper">
         <div className="home__container container">
             <p className="home__subtitle text-cs">
                 Hello, <span>My Name Is</span>
@@ -53,6 +54,7 @@ const Home = () => {
                 <a href="" className="btn text-cs">Download CV</a>
                 <a href="" className="hero__link text-cs">My Skills</a>
             </div>
+        </div>
         </div>
     </section>
   )
