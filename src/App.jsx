@@ -4,6 +4,7 @@ import Portfolio from './components/portfolio/Portfolio'
 import Resume from './components/resume/Resume'
 import Services from './components/services/Services'
 import Skills from './components/skills/Skills'
+import Testimonials from './components/testimonials/Testimonials'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Skills/>
       <Portfolio/>
       <Resume/>
+      <Testimonials/>
    </div>
   )
 }
