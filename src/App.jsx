@@ -2,6 +2,7 @@ import './App.css'
 import Blog from './components/blog/Blog'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import Header from './components/header/Header'
 import Home from './components/home/Home'
 import Portfolio from './components/portfolio/Portfolio'
 import Pricing from './components/pricing/Pricing'
@@ -14,6 +15,7 @@ function App() {
 
   return (
    <div className="main main">
+    <Header/>
       <Home/>
       <Services/>
       <Skills/>
@@ -24,6 +26,7 @@ function App() {
       <Blog/>
       <Contact/>
       <Footer/>
+      
    </div>
   )
 }
