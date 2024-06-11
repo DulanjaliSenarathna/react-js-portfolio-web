@@ -1,5 +1,6 @@
 import './App.css'
 import Blog from './components/blog/Blog'
+import Contact from './components/contact/Contact'
 import Home from './components/home/Home'
 import Portfolio from './components/portfolio/Portfolio'
 import Pricing from './components/pricing/Pricing'
@@ -20,6 +21,7 @@ function App() {
       <Testimonials/>
       <Pricing/>
       <Blog/>
+      <Contact/>
    </div>
   )
 }
