@@ -43,6 +43,8 @@ const Pricing = () => {
                 <img src={shapeTwo} alt="" className="shape c__shape" />
             </div>
 
+            <div className="pricing__item-wrapper">
+                <span className="pricing__label text-cs">Popular</span>
             <div className="pricing__item card card-one">
                 <span className="pricing__subtitle text-cs">Freelancing</span>
                 <h3 className="pricing__price">259 <span>$</span> <em>Week</em></h3>
@@ -72,6 +74,7 @@ const Pricing = () => {
                 </a>
 
                 <img src={shapeTwo} alt="" className="shape c__shape" />
+            </div>
             </div>
 
             <div className="pricing__item card card-one">

@@ -15,6 +15,23 @@
     border: 2px solid var(--border-color);
 }
 
+.pricing__item-wrapper{
+  position: relative;  
+}
+
+.pricing__label{
+    position: absolute;
+    top: -12px;
+    right: 40px;
+    z-index: 20;
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow);
+    padding: 4px 16px;
+    border-radius: 26px;
+    font-size: var(--tiny-font-size);
+    font-weight: 700;
+}
+
 .pricing__subtitle{
     color: var(--title-color);
     font-size: var(--tiny-font-size);
