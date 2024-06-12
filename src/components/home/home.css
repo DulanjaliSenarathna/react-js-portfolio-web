@@ -39,6 +39,7 @@
 }
 
 .home__title{
+    color: #fff;
     font-size: var(--biggest-font-size);
     text-shadow: 2px 2px hsl(0, 0%, 0%), -2px 2px hsl(0, 0%, 0%),
      2px -2px hsl(0, 0%, 0%), -2px -2px hsl(0, 0%, 0%),

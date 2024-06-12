@@ -47,6 +47,33 @@
   --transition: cubic-bezier(0.3,0,0.3,1);
 }
 
+ /*LIGHT THEME*/
+ .light-theme{
+  --title-color: #000;
+  --text-color:#262626;
+  --bg-color: #f0ebe3;
+  --bg-color-alt: #fff;
+  --container-color: #fff;
+  --border-color: #000;
+
+    /*Shadow*/
+    --shadow: 5px 5px rgb(0 0 0 / 20%);
+
+ }
+
+ .light-theme .skills__bar {
+  background: rgba(0,0,0,0.1);
+ }
+
+ .light-theme .skills__percentage{
+  background: var(--border-color);
+ }
+
+ .light-theme .skills__percentage span{
+  background-color: var(--primary-color);
+ }
+
+
 /*RESET*/
 * {
   margin:0;
@@ -161,10 +188,14 @@ img{
     opacity: 1;
 }
 
-.shape{
-  position: absolute;
+.dark-theme .shape{
   filter: invert(1);
   opacity: 0.6;
+}
+
+.shape{
+  position: absolute;
+  
 }
 
 .section{
