@@ -4,6 +4,7 @@ import { FaDribbble , FaTwitter, FaBehance} from "react-icons/fa";
 import { BsSun , BsMoon} from 'react-icons/bs';
 import './header.css'
 import { Link, animateScroll } from 'react-scroll';
+import shapeOne from '../../assets/shape-1.png'
 
 const getStorageTheme = () =>{
     let theme = 'light-theme';
@@ -90,6 +91,10 @@ const Header = () => {
                 </a>
             </div>
                 </div>
+
+                <div className="section__deco deco__left header__deco">
+            <img src={shapeOne} alt="" className="shape" />
+        </div>
             </div>
 
             <div className="nav__btns">

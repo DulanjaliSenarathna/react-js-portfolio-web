@@ -1,12 +1,16 @@
 .portfolio {
     background-image: var(--first-gradient);
+    
 }
 
 .portfolio__list{
     display: flex;
     justify-content: center;
     column-gap: 40px;
+    flex-wrap: wrap;
     margin-bottom: 60px;
+    row-gap: 15px;
+    margin-top:  40px;
 }
 
 .portfolio__list-item{

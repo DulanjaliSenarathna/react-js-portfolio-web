@@ -2,6 +2,7 @@ import React from 'react'
 import { cv } from '../../Data'
 import Card from './Card'
 import './resume.css'
+import shapeOne from '../../assets/shape-1.png'
 
 const Resume = () => {
   return (
@@ -35,6 +36,10 @@ const Resume = () => {
                     })}
                 </div>
             </div>
+        </div>
+
+        <div className="section__deco deco__left">
+            <img src={shapeOne} alt="" className="shape" />
         </div>
     </section>
   )

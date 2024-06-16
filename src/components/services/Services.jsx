@@ -2,6 +2,7 @@ import React from 'react'
 import {services} from '../../Data'
 import { FaArrowRight } from "react-icons/fa";
 import shapeTwo from '../../assets/shape-2.png'
+import shapeOne from '../../assets/shape-1.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -20,6 +21,7 @@ const Services = () => {
         </p>
 
         <Swiper 
+        spaceBetween={30}
         pagination={{
           clickable: true,
         }}
@@ -47,12 +49,16 @@ const Services = () => {
                         </span>
                         <h3 className="services__title">{title}</h3>
                         <p className="services__description">{description}</p>
-                        <a href="" className="link">See Pricing <FaArrowRight className='link__icon'/></a>
+                        <a href="#pricing" className="link">See Pricing <FaArrowRight className='link__icon'/></a>
                         <img src={shapeTwo} alt="" className="shape c__shape" />
                     </SwiperSlide>
                 )
             })}
         </Swiper>
+
+        <div className="section__deco deco__right">
+            <img src={shapeOne} alt="" className="shape" />
+        </div>
     </section>
   )
 }

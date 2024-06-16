@@ -2,6 +2,7 @@ import React from 'react'
 import shapeTwo from '../../assets/shape-2.png'
 import testimonialIcon from '../../assets/testimonials-icon.svg'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import shapeOne from '../../assets/shape-1.png'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -19,6 +20,7 @@ const Testimonials = () => {
         </p>
 
         <Swiper 
+        spaceBetween={30}
         pagination={{
           clickable: true,
         }}
@@ -58,6 +60,10 @@ const Testimonials = () => {
                 )
             })}
         </Swiper>
+
+        <div className="section__deco deco__right">
+            <img src={shapeOne} alt="" className="shape" />
+        </div>
     </section>
   )
 }

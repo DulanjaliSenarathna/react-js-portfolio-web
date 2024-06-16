@@ -2,6 +2,7 @@ import React from 'react'
 import shapeTwo from '../../assets/shape-2.png'
 import './pricing.css'
 import { FaCheck , FaArrowRight} from 'react-icons/fa'
+import shapeOne from '../../assets/shape-1.png'
 
 const Pricing = () => {
   return (
@@ -110,6 +111,10 @@ const Pricing = () => {
             </div>
 
            
+        </div>
+
+        <div className="section__deco deco__left">
+            <img src={shapeOne} alt="" className="shape" />
         </div>
     </section>
   )

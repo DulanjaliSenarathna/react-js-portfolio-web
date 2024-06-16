@@ -22,7 +22,7 @@ const Items = ({projectItems}) => {
                 <span className="portfolio__category text-cs">{category}</span>
                 <h3 className="portfolio__title">{title}</h3>
                 <p className="portfolio__description">{description}</p>
-                <a href="" className="link">
+                <a href="#pricing" className="link">
                     See Pricing
                     <FaArrowRight className='link__icon'></FaArrowRight>
 

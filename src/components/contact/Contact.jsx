@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FaRegAddressBook, FaRegUser,  FaRegEnvelope, FaRegMap } from "react-icons/fa";
 import './contact.css'
 import axios from 'axios';
+import shapeOne from '../../assets/shape-1.png'
 
 const Contact = () => {
 
@@ -102,6 +103,10 @@ const Contact = () => {
                     <button type='submit' className='btn text-cs'>Send Message</button>
                 </div>
             </form>  
+        </div>
+
+        <div className="section__deco deco__left">
+            <img src={shapeOne} alt="" className="shape" />
         </div>
     </section>
   )
